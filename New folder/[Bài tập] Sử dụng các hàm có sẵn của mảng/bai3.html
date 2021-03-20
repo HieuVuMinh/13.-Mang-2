@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var a = prompt("Nhap chuoi ky tu");
+        var up = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        var down = 'abcdefghijklmnopqrstuvwxyz';
+        var b = [];
+        for (var i = 0; i < a.length; i++){
+            if (up.indexOf(a[i]) !== -1 ){
+                b.push(a[i].toLowerCase());
+            } else if (down.indexOf(a[i]) !== -1){
+                b.push(a[i].toUpperCase());
+            } else {
+                b.push(a[i])
+            }
+        } alert(b.join(""))
+    </script>
+</body>
+</html>

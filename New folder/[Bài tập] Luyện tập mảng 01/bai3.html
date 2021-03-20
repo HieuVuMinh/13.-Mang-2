@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var ham = prompt("nhập số");
+    var total = 0
+    var max = ham[0]
+
+        for (var i = 0; i < ham.length; i++){
+            if (max < ham[i]){
+                max = ham[i]
+            }
+            total = parseInt(total) + parseInt(ham[i])
+
+        }
+        var result = total/ham.length
+        document.write("Giá trị lớn nhất: " + max + "<br>" + " Giá trị trung bình: " + result)
+
+</script>
+</body>
+</html>

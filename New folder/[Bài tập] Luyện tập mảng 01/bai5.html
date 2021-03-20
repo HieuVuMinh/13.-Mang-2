@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a = prompt("Nhập số")
+    var c = [];
+    var count = 0;
+    c = a.split('');
+    for (var i = 0;i<c.length;i++){
+        if(c[i] == '-'){
+            alert(c[i] + c[i+1])
+        }
+    }
+    for (var i = 0; i < a.length; i++) {
+        if (a[i] == '-') {
+            c.push(a[i], a[i + 1])
+            count++;
+        }
+    }
+    document.write("chuỗi này có " + count + " số nguyên âm" + "<br>" + c.join(" "))
+</script>
+</body>
+</html>

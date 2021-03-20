@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a = prompt('Điền từ')
+    var vn = ["chuối", "chính thức", "sự kiểm tra", "chính sách", "sự đổi mới" ]
+    var eng = ["banana", "official", "inspection", "policy", "inovation"]
+    var b = [];
+
+        for (var i = 0; i < a.length; i++){
+            if (a == vn[i] ){
+                b = eng[i];
+                break;
+            } else if (a == eng[i] ){
+                b = vn[i];
+                break;
+            }
+        }
+        if (a !== vn[i] && a !== eng[i]){
+        alert("không tìm thấy")
+        }
+        document.write(b)
+
+
+</script>
+</body>
+</html>
